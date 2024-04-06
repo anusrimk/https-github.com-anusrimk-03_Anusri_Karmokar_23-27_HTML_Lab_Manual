@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Capitals</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    label {
+      font-size: 18px;
+    }
+    select {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    #capital {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      display: none; 
+    }
+    select:checked + #capital {
+      display: inline;
+    }
+  </style>
+</head>
+<body>
+  <label for="country-select">Select a country:</label>
+  <select id="country-select">
+    <option value="" disabled selected>Select a country</option>
+    <option value="USA">United States</option>
+    <option value="UK">United Kingdom</option>
+    <option value="France">France</option>
+    <option value="Germany">Germany</option>
+    <option value="Japan">Japan</option>
+  </select>
+  <p>Capital: <span id="capital">-</span></p>
+  
+  <input type="radio" name="capitals" id="usa" value="Washington, D.C.">
+  <input type="radio" name="capitals" id="uk" value="London">
+  <input type="radio" name="capitals" id="france" value="Paris">
+  <input type="radio" name="capitals" id="germany" value="Berlin">
+  <input type="radio" name="capitals" id="japan" value="Tokyo">
+</body>
+</html>
